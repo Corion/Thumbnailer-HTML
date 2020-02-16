@@ -1,4 +1,4 @@
 [Thumbnailer Entry]
 TryExec=/usr/bin/wkhtmltoimage
-Exec=/usr/local/bin/wkhtmltothumbnail.sh %i %o >/dev/null 2>/dev/null
-MimeType=application/binary
+Exec=/usr/local/bin/wkhtmltothumbnail-sqd.sh %i %o >/dev/null 2>/dev/null
+MimeType=application/zip;application/binary

@@ -12,3 +12,7 @@ unzip -p "$1" index.html \
     | perl -ple 'BEGIN{print qq(<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>)}; END{print qq(</body></html>)}' \
     | /usr/bin/wkhtmltoimage --proxy http://127.0.0.2:0 --disable-javascript --disable-plugins --allow . -f png --width 256 --crop-h 256 "-" "$2" \
     >/dev/null 2>/dev/null
+
+# wkhtmltoimage will exit with an error code because it can't connect to our fake proxy
+# so we gobble that exit code
+exit 0
