@@ -1,0 +1,30 @@
+# Thumbnailer support for HTML and Carnet Notes files (SQD) on LXQT
+
+Go from bland, arbitrary icons like this
+
+![1]
+
+to rendered preview thumbnails like this
+
+![2]
+
+by placing these files in your system.
+
+# Installation
+
+Currently no Debian packages exist for these config files, so you will
+have to copy them manually
+
+1. Install the prerequisites
+
+    sudo apt install wkhtmltopdf unzip perl
+
+1. Copy the `*.thumbnailer` files into `/usr/share/thumbnailer`
+1. Copy the `*.sh` files into `/usr/local/bin`
+
+    sudo cp *.sh /usr/local/bin
+
+Maybe log out and log in again
+
+[1] ![bland, arbitrary icons](https://raw.githubusercontent.com/corion/Thumbnailer-HTML/master/demo/folder-before.png)
+[2] ![preview thumbnails](https://raw.githubusercontent.com/corion/Thumbnailer-HTML/master/demo/folder-after.png)
