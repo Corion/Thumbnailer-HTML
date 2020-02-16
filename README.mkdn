@@ -2,13 +2,14 @@
 
 Go from bland, arbitrary icons like this
 
-[![1]]
+![bland, arbitrary icons](https://raw.githubusercontent.com/corion/Thumbnailer-HTML/master/demo/folder-before.png)
 
 to rendered preview thumbnails like this
 
-[![2]]
+![preview thumbnails](https://raw.githubusercontent.com/corion/Thumbnailer-HTML/master/demo/folder-after.png)
 
-by placing these files in your system.
+by placing these files in your system. Of course, if you have more interesting
+HTML files than I do, they will look fancier as thumbnails as well.
 
 # Installation
 
@@ -32,7 +33,9 @@ have to copy them manually
     sudo cp *.sh /usr/local/bin
 ```
 
-Maybe log out and log in again
+Maybe log out and log in again or restart your file manage:
 
-[1] ![bland, arbitrary icons](https://raw.githubusercontent.com/corion/Thumbnailer-HTML/master/demo/folder-before.png)
-[2] ![preview thumbnails](https://raw.githubusercontent.com/corion/Thumbnailer-HTML/master/demo/folder-after.png)
+```
+    pcmanfm-qt -q; pcmanfm-qt -d &
+```
+
