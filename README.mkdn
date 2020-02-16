@@ -2,11 +2,11 @@
 
 Go from bland, arbitrary icons like this
 
-![1]
+[![1]]
 
 to rendered preview thumbnails like this
 
-![2]
+[![2]]
 
 by placing these files in your system.
 
@@ -17,12 +17,20 @@ have to copy them manually
 
 1. Install the prerequisites
 
+```
     sudo apt install wkhtmltopdf unzip perl
+```
 
 1. Copy the `*.thumbnailer` files into `/usr/share/thumbnailer`
+
+```
+    sudo cp *.sh /usr/local/bin
+```
 1. Copy the `*.sh` files into `/usr/local/bin`
 
+```
     sudo cp *.sh /usr/local/bin
+```
 
 Maybe log out and log in again
 
