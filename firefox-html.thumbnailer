@@ -1,0 +1,6 @@
+# This one doesn't work, as firefox really wants a profile
+# and we would have to set up a profile in a separate step
+[Thumbnailer Entry]
+TryExec=/usr/bin/firefox-esr
+Exec=/usr/bin/firefox-esr -headless -screenshot %o %i --window-size 256x256 %s
+MimeType=text/html
