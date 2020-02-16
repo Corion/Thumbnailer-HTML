@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=/usr/bin/wkhtmltoimage
+Exec=/usr/local/bin/wkhtmltothumbnail.sh %i %o >/dev/null 2>/dev/null
+MimeType=text/html
